@@ -29,11 +29,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    min-height: 100dvh;
     gap: 8px;
     font-family: 'Oxanium', sans-serif;
-    margin: 10px;
 }
+
 article {
     width: 100%;
     display: flex;
@@ -174,17 +174,23 @@ article {
     }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 660px) {
+    main {
+        margin: 10px;
+    }
     .link-item {
         height: 100%;
-        min-height: 35px;
+        min-height: 40px;
     }
     .wrapper {
         padding: 20px 40px 20px 40px;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 391px) {
+    main {
+        margin: 10px;
+    }
     .link-item {
         height: 100%;
         min-height: 35px;
