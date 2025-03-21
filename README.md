@@ -9,8 +9,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/2daaria/Social-links-profile)
+- Live Site URL: [Live](https://2daaria.github.io/Social-links-profile/)
 
 ### Built with
 
