@@ -58,3 +58,12 @@
         top: 100vh;
     }
 }
+
+@media (max-width: 760px) {
+    .rain {
+        display: none;
+    }
+    .drop, .drop-short. .drop-long {
+        display: none;
+    }
+}

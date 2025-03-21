@@ -6,6 +6,9 @@ body {
     background: url("images/background.jpg") center/cover no-repeat #18152f;
     overflow: hidden;
     color: #fff;
+    height: 100%;
+    min-height: 100dvh;
+    width: 100%;
 }
 
 body::after {
@@ -26,9 +29,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100dvh;
     gap: 8px;
     font-family: 'Oxanium', sans-serif;
-    min-height: 100dvh;
+    margin: 10px;
+}
+article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
@@ -36,14 +45,17 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 384px;
-    height: 611px;
+    width: 100%;
+    max-width: 384px;
+    height: 100%;
+    max-height: 611px;
     padding: 40px;
     background-color: rgba(17, 8, 119, 0.2);
     backdrop-filter: blur(8px);
     border-radius: 12px;
     border: 1px solid #78a0ef;
     box-shadow: 0 0 90px -10px rgb(170 93 255);
+    box-sizing: border-box;
 }
 
 .social-links {
@@ -52,8 +64,10 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    width: 304px;
-    height: 289px;
+    width: 100%;
+    max-width: 304px;
+    height: 100%;
+    max-height: 289px;
 }
 
 .link-item {
@@ -64,8 +78,10 @@ main {
     font-weight: 600;
     color: #fff;
     text-shadow: 0 0 3px #252852;
-    width: 304px;
-    height: 45px;
+    width: 100%;
+    max-width: 304px;
+    height: 100%;
+    min-height: 45px;
     border-radius: 8px;
     background-image: radial-gradient(circle,
     rgba(152, 166, 255, 0.25),
@@ -128,7 +144,8 @@ main {
     backdrop-filter: blur(8px);
     border: 1px solid #78a0ef;
     box-shadow: 0 0 70px -5px rgb(170 93 255);
-    width: 384px;
+    width: 100%;
+    max-width: 384px;
     border-radius: 12px;
     font-size: 12px;
     padding: 8px;
@@ -146,4 +163,33 @@ main {
 
 .attribution a:focus {
     outline: none;
+}
+
+@media (max-width: 760px) {
+    body::after {
+        display: none;
+    }
+    .wrapper {
+       background-color: rgba(30, 27, 68, 0.4);
+    }
+}
+
+@media (max-height: 600px) {
+    .link-item {
+        height: 100%;
+        min-height: 35px;
+    }
+    .wrapper {
+        padding: 20px 40px 20px 40px;
+    }
+}
+
+@media (max-width: 376px) {
+    .link-item {
+        height: 100%;
+        min-height: 35px;
+    }
+    .wrapper {
+       background-color: rgba(30, 27, 68, 0.4);
+    }
 }
